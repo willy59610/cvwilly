@@ -3,38 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="all" title="style de la page" href="style.css" />
+    <script type="text/javascript" src="js.js"></script>
     <script src="https://kit.fontawesome.com/f428ff46c6.js" crossorigin="anonymous"></script>
 </head>
-<div class="info">
-    <span><h1>AERNOUDTS</h1>Willy</span>
-<p>1 tour UPTO<br>
-    59610 FOURMIES<br>
-    Tél:0000000000<br>
-    Permis B<br>
-    <a href="mailto:waernoudts@free.fr">Waernoudts@free.fr</a></p>
-</div>
+
 <header>
-    <ul class="navigation">
-        <li><a href="index.html">Acceuil</a></li>
-        <li><a href="exp.html">Expériences</a></li>
-        <li><a href="form.html">Formations</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">Liens</a> </li>
-    </ul>
+<div class="flex-photo">
+    <img src="img/web-development-program.jpg"/></div>
 </header>
 <body>
-<div class="presentation">
-    <p>
-    PROFIL
-    J’ai passé les deux dernières années à donner aux particuliers et aux professionnels les moyens d'exploiter au mieux les solutions de…. dans le cadre de leurs activités. J’ai acquis la capacité à transmettre des expériences uniques à cette clientèle par le biais de briefings, d'ateliers et d'événements en magasin. De plus l’excellence en matière de service client m’a permis de me concentrer sur le point le plus important de la relation commerciale : le client. Je souhaite désormais étendre mon expérience et mon savoir-faire au service d'un acteur majeur du prêt-à-porter luxe et haut de gamme.
-</p>
+<ul class="flex-name">
+    <li class="flex-text">Aernoudts Willy<br><span>Développeur web <p>351 Tour Jeanne III</p></span></li>
+</ul>
+<ul class="flex-container">
+    <li class="flex-item flex-home"><a href="index.html"><i class="fas fa-home"></i></a></li>
+    <li class="flex-item flex-exp"><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');"><i class="fas fa-network-wired"></i></span></li>
+    <script type="text/javascript">
+        //<!--
+        afficher_cacher('texte');
+        //-->
+    </script>
+    <li class="flex-item flex-form"><span class="bouton1" id="bouton_texte1" onclick="javascript:afficher_cacher('texte1');"><i class="fas fa-graduation-cap"></i></span></li>
+    <li class="flex-item flex-comp"><i class="fas fa-cogs"></i></li>
+    <li class="flex-item flex-contact"><a href="https://www.linkedin.com/in/willy-aernoudts-b107b2195/"target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
+    <li class="flex-item flex-face"><i class="fab fa-facebook-square"></i></li>
+    <li class="flex-item flex-twitter"><i class="fab fa-twitter"></i></li>
+</ul>
+<span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');"></span>
+<div id="texte" class="texte">
+    <h1>Expériences professionnelles</h1>
+    <p><strong>05/2004-04/2014:</strong>ACTICALL PARIS Téléconseiller</p>
+    <p>Réception d'appel assistance technique pour les clients de Samsung 6 ans</p>
+    <ul>
+        <li>Ordinateur</li>
+        <li>Imprimante</li>
+        <li>Fax</li>
+        <li>Téléphone portable</li>
+    </ul>
+    <P><strong>11/1997-03/2002:</strong>INTERIMAIRE</P>
+    <p>Opérateur sur machine</p>
+    <ul>
+        <li>Redresseur</li>
+        <li>Opérateur sur presse</li>
+        <li>Cintreur</li>
+    </ul>
+    <p><strong>04/1998-1999:</strong>SICT FOURMIES</p>
+    <p>Maintenance du matériel</p>
+    <ul>
+        <li>Réparation du matériel collectif</li>
+        <li>soudure</li>
+        <li>peinture</li>
+        <li>réparations diverses</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    //<!--
+    afficher_cacher('texte');
+    //-->
+</script>
+    <div id="texte1" class="texte1">
+        <h1>Formations</h1>
+        <p><strong>2019 FOURMIES:</strong> Titre professionnel Développeur web web mobile</p>
+        <p>BAC+2 developpeur web <a href="https://www.uptofourmies.fr/" target="_blank">UPTO</a></p>
+        <p><strong>2003 PARIS:</strong>FORMATION</p>
+        <p>Technicien réseau et maintenance informatique</p>
+        <p><strong>1996 FOURMIES:</strong>ECOLE</p>
+        <p>Bac en génie mécanique</p>
+        <p><a href="http://cclaudel-fourmies.etab.ac-lille.fr/" target="_blank">Lycée Camille Claudel</a></p>
+        <p><strong>1994 FOURMIES:</strong>ECOLE</p>
+        <p>BEP carosserie automobile type B</p>
+        <p><a href="http://cclaudel-fourmies.etab.ac-lille.fr/" target="_blank">Lycée Camille Claudel</a></p>
+        <p><strong>1992 FOURMIES:</strong>ECOLE</p>
+        <p>CAP maintenance des véhicules automobile type B</p>
+        <p><a href="http://cclaudel-fourmies.etab.ac-lille.fr/" target="_blank">Lycée Camille Claudel</a></p>
+    </div>
+    <script type="text/javascript">
+        //<!--
+        afficher_cacher('texte1');
+        //-->
+    </script>
 </div>
 </body>
-<footer>
-    <ul class="foot">
-        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://willyae.000webhostapp.com/"><i class="fab fa-facebook-square"></i></a></li>
-    </ul>
+</footer>
+
 </footer>
 
 </html>
